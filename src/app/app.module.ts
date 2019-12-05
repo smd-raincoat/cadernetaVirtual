@@ -27,6 +27,10 @@ import { IonicStorageModule } from '@ionic/storage';
 import { PhotosProvider } from '../providers/photos/photos';
 import { GalleryPage } from '../pages/gallery/gallery';
 import {CadastrarPage} from '../pages/cadastrar/cadastrar'
+import { ListcheckPage } from '../pages/listcheck/listcheck';
+import { EmergencyPage } from '../pages/emergency/emergency';
+import { HelpsPage } from '../pages/helps/helps';
+import { CreditsPage } from '../pages/credits/credits';
 
 
 
@@ -45,7 +49,11 @@ import {CadastrarPage} from '../pages/cadastrar/cadastrar'
     AnotacoesPage,
     AlterarViagemPage,
     GalleryPage,
-    CadastrarPage
+    CadastrarPage,
+    ListcheckPage,
+    EmergencyPage,
+    HelpsPage,
+    CreditsPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +76,11 @@ import {CadastrarPage} from '../pages/cadastrar/cadastrar'
     AnotacoesPage,
     AlterarViagemPage,
     GalleryPage, 
-    CadastrarPage
+    CadastrarPage,
+    ListcheckPage,
+    EmergencyPage,
+    HelpsPage,
+    CreditsPage
   ],
   providers: [
     StatusBar,

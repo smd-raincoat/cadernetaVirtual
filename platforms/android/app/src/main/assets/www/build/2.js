@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 304:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryPageModule", function() { return GalleryPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListcheckPageModule", function() { return ListcheckPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listcheck__ = __webpack_require__(115);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var GalleryPageModule = /** @class */ (function () {
-    function GalleryPageModule() {
+var ListcheckPageModule = /** @class */ (function () {
+    function ListcheckPageModule() {
     }
-    GalleryPageModule = __decorate([
+    ListcheckPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__gallery__["a" /* GalleryPage */],
+                __WEBPACK_IMPORTED_MODULE_2__listcheck__["a" /* ListcheckPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gallery__["a" /* GalleryPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__listcheck__["a" /* ListcheckPage */]),
             ],
         })
-    ], GalleryPageModule);
-    return GalleryPageModule;
+    ], ListcheckPageModule);
+    return ListcheckPageModule;
 }());
 
-//# sourceMappingURL=gallery.module.js.map
+//# sourceMappingURL=listcheck.module.js.map
 
 /***/ })
 

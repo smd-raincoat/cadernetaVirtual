@@ -62,6 +62,7 @@ export class ViagemPage {
     let alert = this.alertCtrl.create({
       title: 'Sobre viagem',
       message: 'Título:'+ this.viagem.titulo + '<br>Cidade:' + this.viagem.cidade + 
+      '<br>Quilometragem:' + this.viagem.quilometragem +
       '<br>Data de partida:'+ this.viagem.partidaData +'<br>Hora de partida:'+ this.viagem.partidaHora +
       '<br>Data de retorno:'+ this.viagem.retornoData +'<br>Hora de partida:'+ this.viagem.retornoHora +
       '<br>Observações:' + this.viagem.observacoes ,

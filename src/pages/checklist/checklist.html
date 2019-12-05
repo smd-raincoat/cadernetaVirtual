@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Materiais Para Viagem</ion-title>
+    <ion-title  style="font-family: Comfortaa;">Materiais Para Viagem</ion-title>
     <ion-buttons end>
       <button (click)="add()">
         <ion-icon name="add"></ion-icon>
@@ -28,7 +28,8 @@
       <ion-checkbox></ion-checkbox>
     </ion-item>
   </ion-list>-->
-  <h6>Arraste para o lado para deletar</h6>
+  <div class="slide">
+  <h6 style="font-family: Comfortaa;">Arraste para o lado para deletar</h6>
   <ion-list>
     <ion-item-sliding *ngFor="let todo of todoList; let i = index">
       <ion-item>
@@ -42,6 +43,6 @@
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
-
+</div>
 
 </ion-content>

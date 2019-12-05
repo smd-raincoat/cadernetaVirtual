@@ -8,6 +8,9 @@ import { HomePage } from '../pages/home/home';
 import { dataProvider } from '../providers/data/data';
 import { ChecklistPage } from '../pages/checklist/checklist';
 import { MaterialDeApoioPage } from '../pages/material-de-apoio/material-de-apoio';
+import { EmergencyPage } from '../pages/emergency/emergency';
+import { HelpsPage } from '../pages/helps/helps';
+import { CreditsPage } from '../pages/credits/credits';
 
 @Component({
   templateUrl: 'app.html',
@@ -29,7 +32,10 @@ export class MyApp {
     this.pages = [
       { title: 'Página Inicial', component: HomePage },
       { title: 'Materiais Para Viagem', component: ChecklistPage },
-      { title: 'Materiais De Apoio', component: MaterialDeApoioPage}
+      { title: 'Materiais De Apoio', component: MaterialDeApoioPage},
+      { title: 'Números de Emergencia', component: EmergencyPage},
+      { title: 'Primeiros Socorros', component: HelpsPage},
+      { title: 'Créditos', component: CreditsPage}
     ];
 
   }

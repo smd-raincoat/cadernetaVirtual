@@ -6,16 +6,17 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Alterar dados da viagem</ion-title>
+    <ion-title style="font-family: Comfortaa;">Alterar dados da viagem</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <h1>Editar viagem</h1>
+    
     <div class="slide">
+        <h1 style="font-family: Comfortaa;">Editar viagem</h1>
       <form (ngSubmit)="logForm()">
         <ion-item>
-          <h3>(*) Obrigatório</h3>
+          <h3 >(*) Obrigatório</h3>
         </ion-item>
   
         <ion-item>
@@ -31,6 +32,11 @@
         <ion-item>
           <ion-label floating>Cidade</ion-label>
           <ion-input type="text" [(ngModel)]="cadastroForm.cidade" name="cidade"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Quilometragem:</ion-label>
+          <ion-input type="text" [(ngModel)]="cadastroForm.quilometragem" name="quilometragem"></ion-input>
         </ion-item>
   
         <ion-item>

@@ -16,6 +16,19 @@ page-viagem {
     .navbar{
         flex:left;
     }
+    .new{
+        margin-top:20px;
+        //width: 50%;
+        //height: 50%;
+        width: 120px;
+        height: 120px;
+        box-shadow: -10 10 #b2b2b2;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
     
 
 }

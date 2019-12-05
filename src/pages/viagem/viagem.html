@@ -1,34 +1,36 @@
 <ion-header>
-  <ion-navbar class="side" color="secondary">
-    <ion-title style="margin-top: 20px;">{{viagem.titulo}}</ion-title>
-    <img class="delete" style="margin-left: 250px; margin-top:-60px;" src="assets/imgs/lixoo.png" (click)="apagarViagem()">
-  </ion-navbar>
-</ion-header>
+    <ion-navbar class="side" color="secondary">
+      <ion-title style="margin-top: 20px;font-family: Comfortaa;">{{viagem.titulo}}</ion-title>
+      <img class="delete" style="margin-left: 250px; margin-top:-90px;" src="assets/imgs/lixoo.png" (click)="apagarViagem()">
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <div padding class="slide">
+      <div class="grid">
+      <div padding>
+          <img class="new" src="assets/imgs/info.png" (click)="verDados()">
+        
+      </div>
+      
+  
+      <div padding>
+          <img class="new" src="assets/imgs/ponto.png" (click)="goAnotacoesPage()">
+          <label style="font-family: Comfortaa; position:absolute; top:160px;left: 225px;color: #FFFFFF;">Pontos</label>
+        
+      </div>
 
-<ion-content padding>
-
-  <div padding class="slide">
-    <div padding>
-
-    </div>
-    <div padding>
-      <button ion-button block (click)="verDados()">Informações da viagem</button>
-    </div>
-    
-
-    <div padding>
-      <button ion-button block (click)="goAnotacoesPage()">Pontos</button>
-    </div>
-
-    <div padding>
-        <button ion-button block (click)="goGallery()">Galeria</button>
-    </div>
-
-    <div padding>
-        <button ion-button block (click)="alerta()">Anexos</button>
-    </div>
+      <!--<div padding>
+          <img class="new" src="assets/imgs/galery.png" (click)="goGallery()">
+      </div>-->
+  
+      <div padding>
+          <img class="new" src="assets/imgs/anexo.png" (click)="alerta()">
+      </div>
 
   </div>
+    </div>
 
 
 </ion-content>

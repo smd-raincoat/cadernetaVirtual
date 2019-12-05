@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup} from '@angular/forms'
 import {dataProvider} from "../../providers/data/data";
 import {HomePage} from '../home/home'
+import { ListcheckPage } from '../listcheck/listcheck';
 
 
 
@@ -40,11 +41,12 @@ export class CadastroViagemPage {
     }
     
   }
-  setData(titulo: string,data: string, cidade: string, partidaData: string,partidaHora:string, retornoData: string,retornoHora: string, observacoes: string){
+  setData(titulo: string,data: string, cidade: string, quilometragem:string, partidaData: string,partidaHora:string, retornoData: string,retornoHora: string, observacoes: string){
     let cadastroForm = {
       titulo: '',
       data:'',
       cidade:'',
+      quilometragem: '',
       partidaData:'',
       partidaHora:'',
       retornoData:'',
@@ -54,6 +56,7 @@ export class CadastroViagemPage {
     cadastroForm.titulo = titulo;
     cadastroForm.data = data;
     cadastroForm.cidade = cidade;
+    cadastroForm.quilometragem = quilometragem;
     cadastroForm.partidaData = partidaData;
     cadastroForm.partidaHora = partidaHora;
     cadastroForm.retornoData = retornoData;
@@ -82,6 +85,10 @@ export class CadastroViagemPage {
 
   goHome(){
     this.navCtrl.pop();
+  }
+
+  goChecklist(){
+    this.navCtrl.push(ListcheckPage);
   }
 
 }

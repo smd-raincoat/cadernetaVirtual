@@ -24,6 +24,7 @@ export class AlterarViagemPage {
     titulo:"",
     data:"",
     cidade:"",
+    quilometragem: '',
     partidaData:'',
     partidaHora:'',
     retornoData:'',
@@ -42,6 +43,7 @@ export class AlterarViagemPage {
       titulo: '',
       data:'',
       cidade:'',
+      quilometragem: '',
       partidaData:'',
       partidaHora:'',
       retornoData:'',
@@ -51,11 +53,12 @@ export class AlterarViagemPage {
     }
   }
 
-  setData(titulo: string,data: string, cidade: string, partidaData: string,partidaHora:string, retornoData: string,retornoHora: string, observacoes: string){
+  setData(titulo: string,data: string, cidade: string,quilometragem:string, partidaData: string,partidaHora:string, retornoData: string,retornoHora: string, observacoes: string){
     let cadastroForm = {
       titulo: '',
       data:'',
       cidade:'',
+      quilometragem: '',
       partidaData:'',
       partidaHora:'',
       retornoData:'',
@@ -65,6 +68,7 @@ export class AlterarViagemPage {
     cadastroForm.titulo = titulo;
     cadastroForm.data = data;
     cadastroForm.cidade = cidade;
+    cadastroForm.quilometragem = quilometragem;
     cadastroForm.partidaData = partidaData;
     cadastroForm.partidaHora = partidaHora;
     cadastroForm.retornoData = retornoData;
@@ -92,6 +96,7 @@ export class AlterarViagemPage {
     this.cadastroForm.titulo = this.viagens[this.indexViagem].titulo;
     this.cadastroForm.data = this.viagens[this.indexViagem].data;
     this.cadastroForm.cidade = this.viagens[this.indexViagem].cidade;
+    this.cadastroForm.quilometragem = this.viagens[this.indexViagem].quilometragem;
     this.cadastroForm.partidaData = this.viagens[this.indexViagem].partidaData;
     this.cadastroForm.partidaHora = this.viagens[this.indexViagem].partidaHora;
     this.cadastroForm.retornoData = this.viagens[this.indexViagem].retornoData;

@@ -6,17 +6,19 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Galeria</ion-title>
+    <ion-title style="font-family: Comfortaa;">Galeria</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <button ion-button block (click)="openCamera()">Adicionar imagem</button>
-  <button ion-button block (click)="openCamera()">Adicionar da Camera</button>
-  <button ion-button block (click)="openGallery()">Adicionar da Galeria</button>
+  <div class="slide">
+  <div class="grid">
+  <img class="new" src="assets/imgs/imagem.png" (click)="openCamera()">
+  
 
 
   <img [src]="imagem" />
-
+</div>
+</div>
 
 </ion-content>

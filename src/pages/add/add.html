@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Adicionar Item</ion-title>
+    <ion-title style="font-family: Comfortaa;">Adicionar Item</ion-title>
   </ion-navbar>
   <ion-buttons end>
       <button (click)="save()"><ion-icon name="checkmark"></ion-icon></button>
@@ -14,11 +14,12 @@
 </ion-header>
 
 <ion-content padding class="add">
+  <div class="slide">
     <ion-list>
         <ion-item>
             <ion-label floating>Novo Item</ion-label>
             <ion-input type="text" [(ngModel)]="todoItem"></ion-input>
         </ion-item>
     </ion-list>
-
+  </div>
 </ion-content>

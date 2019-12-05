@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    
+    <ion-title style="font-family: Comfortaa;">Checklist</ion-title>
+    <ion-buttons end>
+      <button (click)="add()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="todos">
+  <!--<ion-list id="items">
+
+    <ion-item>
+      <ion-label>{{checklist[0]}}</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{checklist[1]}}</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{checklist[2]}}</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+  </ion-list>-->
+  <div class="slide">
+  <h6 style="font-family: Comfortaa;">Arraste para o lado para deletar</h6>
+  <ion-list>
+    <ion-item-sliding *ngFor="let todo of todoList; let i = index">
+      
+      <ion-checkbox></ion-checkbox>
+      <ion-item>
+        <!--<ion-checkbox></ion-checkbox>-->
+        <h2>{{ todo }}</h2>
+        
+      </ion-item>
+      <ion-item-options>
+        <button danger (click)="delete(i)">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <button ion-button block (click)="goHome()">Seguir</button>
+</div>
+
+</ion-content>

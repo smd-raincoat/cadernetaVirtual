@@ -9,13 +9,36 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Material De Apoio</ion-title>
+    <ion-title style="font-family: Comfortaa;">Material De Apoio</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-   
-  <button ion-button full (click)="documentOne()">Diagrama de Rochas</button>
-  <button ion-button full (click)="documentTwo()">Tipos de Rocha</button>
+   <div class="slide">
+  <div class ="grid">
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentOne()">
+      <label style="position:absolute; top:140px;left: 55px;color: #FFFFFF;">Diagrama de <br> Rochas</label>
 
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentTwo()">
+      <label style="position:absolute; top:140px;left: 230px;color: #FFFFFF;">Tipos de <br> Rochas</label>
+
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentThree()">
+      <label style="position:absolute; top:300px;left: 65px;color: #FFFFFF;">Rochas 01</label>
+  
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentFour()">
+      <label style="position:absolute; top:300px;left: 225px;color: #FFFFFF;">Rochas 02</label>
+
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentFive()">
+      <label style="position:absolute; top:455px;left: 65px;color: #FFFFFF;">Rochas 03</label>
+
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentSix()">
+      <label style="position:absolute; top:455px;left: 232px;color: #FFFFFF;">Escalas</label>
+
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentSeven()">
+      <label style="position:absolute; top:610px;left: 68px;color: #FFFFFF;">Pressões</label>
+
+      <img class="new" style="margin-top: 35px; margin-left: 20px;" src="assets/imgs/material.png" (click)="documentEight()">
+      <label style="position:absolute; top:610px;left: 234px;color: #FFFFFF;">Outros</label>
+  </div>
+   </div>
 </ion-content>

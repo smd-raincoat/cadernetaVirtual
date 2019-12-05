@@ -43,6 +43,72 @@ export class MaterialDeApoioPage {
 
   }
 
+  documentThree(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/rochas1.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentFour(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/rochas2.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentFive(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/rochas3.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentSix(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/escalas.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentSeven(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/pressoes.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentEight(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/outros.pdf', 'application/pdf', options);
+  
+
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MaterialDeApoioPage');
   }

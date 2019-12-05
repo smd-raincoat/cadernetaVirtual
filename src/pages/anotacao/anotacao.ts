@@ -99,6 +99,8 @@ export class AnotacaoPage {
         { text: this.viagem.titulo },
         { text: 'Cidade:', style: 'subheader' },
         { text: this.viagem.cidade },
+        { text: 'Quilometragem:', style: 'subheader' },
+        { text: this.viagem.quilometragem },
         { text: 'Data de partida:', style: 'subheader' },
         { text: this.viagem.partidaData },
         { text: 'Hora de partida:', style: 'subheader' },
@@ -154,7 +156,7 @@ export class AnotacaoPage {
       }
     }
     this.pdfObj = pdfMake.createPdf(docDefinition);
-
+    this.downloadPdf();
   }
 
   downloadPdf(){

@@ -6,17 +6,27 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Pontos</ion-title>
+    <ion-title style="font-family: Comfortaa;">Pontos</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <div padding>
-        <button ion-button block (click)="goCadastroAnotacaoPage()">Criar ponto</button>
+  <div class="slide">
+    <div class="grid">
+      <div padding>
+        <button ion-button style="background-color:  #246eb9;" (click)="goCadastroAnotacaoPage()">
+          <img style="width:75%; position:absolute; top:9px;" src="assets/imgs/newfile.png"/>
+          <label style=" font-family: Comfortaa;position:absolute; top:95px;">Criar ponto</label>
+        </button>
       </div>
-  
+
       <div padding *ngFor="let anotacao of anotacoes; let i = index">
-        <button ion-button block (click)="goAnotacaoPage(i)">Ponto {{ i + 1}}<br>{{anotacao.titulo}}</button>
+        <button ion-button  (click)="goAnotacaoPage(i)">
+          <img style="width:40%; position:absolute; top:15px;"  src="assets/imgs/file.png" />
+          <label style=" font-family: Comfortaa;position:absolute; top:84px;">Ponto {{ i + 1}}<br>{{anotacao.titulo}}</label>
+          </button>
       </div>
+    </div>
+  </div>
 
 </ion-content>

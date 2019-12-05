@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams, AlertController, ToastController }
 import {ViagemPage} from '../viagem/viagem';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { PhotosProvider } from '../../providers/photos/photos';
+import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+import { File } from '@ionic-native/file';
 
 /**
  * Generated class for the CadastroAnotacaoPage page.
@@ -29,7 +31,7 @@ export class CadastroAnotacaoPage {
     coordenadaY:"",
     altitude:"",
     texto:"",
-    imagem:""
+    imagem:[]
   }
 
   public viagens: any;
@@ -37,7 +39,8 @@ export class CadastroAnotacaoPage {
   
   constructor(public navCtrl: NavController, public navParams: NavParams, 
     private camera: Camera,private alertCtrl: AlertController,
-    public toastController: ToastController, private photoservice: PhotosProvider) {
+    public toastController: ToastController, private photoservice: PhotosProvider, 
+    private document: DocumentViewer, private file: File) {
     this.cadastroForm = {
       titulo:"",
       data:"",
@@ -46,7 +49,7 @@ export class CadastroAnotacaoPage {
       coordenadaY:"",
       altitude:"",
       texto:"",
-      imagem:"",
+      imagem:[],
     }
     this.viagens = localStorage.getItem('viagens');
     
@@ -73,7 +76,7 @@ export class CadastroAnotacaoPage {
 
   }
   logForm(){
-    this.cadastroForm.imagem = this.imagem;
+    //this.cadastroForm.imagem = this.imagem;
     this.viagens = localStorage.getItem('viagens');
     this.viagens = JSON.parse(this.viagens);
     this.viagens[localStorage.getItem("indexViagem")].anotacoes.push(this.cadastroForm);
@@ -133,6 +136,7 @@ export class CadastroAnotacaoPage {
         let base64image = 'data:image/jpeg;base64,' + imageData;
         this.imagem = base64image;
         //this.imagens.push(this.imagem);
+        this.cadastroForm.imagem.push(this.imagem);
  
       }, (error) => {
         console.error(error);
@@ -161,6 +165,7 @@ export class CadastroAnotacaoPage {
         let base64image = 'data:image/jpeg;base64,' + imageData;
         this.imagem = base64image;
         //this.imagens.push(this.imagem);
+        this.cadastroForm.imagem.push(this.imagem);
  
       }, (error) => {
         console.error(error);
@@ -174,6 +179,160 @@ export class CadastroAnotacaoPage {
   }
   saveImage(){
 
+  }
+
+  documentOne(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 1'
+    }
+    this.document.viewDocument(filePath + '/diagramasrochas.pdf', 'application/pdf', options);
+  
+
+  }
+  documentTwo(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/tiposderochas.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentThree(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/rochas1.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentFour(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/rochas2.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentFive(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/rochas3.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentSix(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/escalas.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentSeven(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/pressoes.pdf', 'application/pdf', options);
+  
+
+  }
+
+  documentEight(){
+    let filePath = this.file.applicationDirectory + 'www/assets';
+    
+    const options: DocumentViewerOptions = {
+      title: 'Pdf 2'
+    }
+    this.document.viewDocument(filePath + '/outros.pdf', 'application/pdf', options);
+  
+
+  }
+
+  MaterialdeApoio(){
+    let alert = this.alertCtrl.create({
+      title: 'Consultar Material:',
+      
+      buttons: [
+        {
+          text: 'Diagrama de Rochas:',
+          
+          handler: () => {
+            this.documentOne();
+          }
+        },
+        {
+          text: 'Tipos de Rochas',
+          handler: () => {
+            this.documentTwo();
+            
+          }
+        },
+        {
+          text: 'Rochas 01',
+          handler: () => {
+            this.documentThree();
+            
+          }
+        },
+        {
+          text: 'Rochas 02',
+          handler: () => {
+            this.documentFour();
+            
+          }
+        },
+        {
+          text: 'Rochas 03',
+          handler: () => {
+            this.documentFive();
+            
+          }
+        }, 
+        {
+          text: 'Escalas',
+          handler: () => {
+            this.documentSix();
+            
+          }
+        }, 
+        {
+          text: 'Pressões',
+          handler: () => {
+            this.documentSeven();
+            
+          }
+        },
+        {
+          text: 'Outros',
+          handler: () => {
+            this.documentEight();
+            
+          }
+        }
+      ]
+    });
+    alert.present();
+    
   }
 
 }

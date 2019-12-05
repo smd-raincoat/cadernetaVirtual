@@ -1,14 +1,14 @@
 webpackJsonp([9],{
 
-/***/ 298:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlterarViagemPageModule", function() { return AlterarViagemPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroAnotacaoPageModule", function() { return CadastroAnotacaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alterar_viagem__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro_anotacao__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AlterarViagemPageModule = /** @class */ (function () {
-    function AlterarViagemPageModule() {
+var CadastroAnotacaoPageModule = /** @class */ (function () {
+    function CadastroAnotacaoPageModule() {
     }
-    AlterarViagemPageModule = __decorate([
+    CadastroAnotacaoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__alterar_viagem__["a" /* AlterarViagemPage */],
+                __WEBPACK_IMPORTED_MODULE_2__cadastro_anotacao__["a" /* CadastroAnotacaoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__alterar_viagem__["a" /* AlterarViagemPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cadastro_anotacao__["a" /* CadastroAnotacaoPage */]),
             ],
         })
-    ], AlterarViagemPageModule);
-    return AlterarViagemPageModule;
+    ], CadastroAnotacaoPageModule);
+    return CadastroAnotacaoPageModule;
 }());
 
-//# sourceMappingURL=alterar-viagem.module.js.map
+//# sourceMappingURL=cadastro-anotacao.module.js.map
 
 /***/ })
 
